@@ -19,6 +19,8 @@
       var d = n % 10, h = n % 100;
       return d >= 2 && d <= 4 && (h < 12 || h > 14) ? box.dataset.few : box.dataset.many;
     }
+    // Francuski: 0 i 1 w liczbie pojedynczej („0 œuf”).
+    if (box.dataset.lang === 'fr') return n < 2 ? box.dataset.one : box.dataset.many;
     return n === 1 ? box.dataset.one : box.dataset.many;
   }
 

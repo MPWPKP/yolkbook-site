@@ -4,10 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Yolkbook: Chicken Egg Tracker &amp; Flock Journal App</title>
-<meta name="description" content="Count your hens' eggs in one tap, see what each egg costs and plan hatches. For chickens, ducks, quail, geese and turkeys. Data stays on your phone. Pay once.">
+<meta name="description" content="Count your hens&#x27; eggs in one tap, see what each egg costs and plan hatches. For chickens, ducks, quail, geese and turkeys. Data stays on your phone. Pay once.">
 <link rel="canonical" href="https://yolkbook.app/">
 <link rel="alternate" hreflang="en" href="https://yolkbook.app/">
 <link rel="alternate" hreflang="pl" href="https://yolkbook.app/pl/">
+<link rel="alternate" hreflang="de" href="https://yolkbook.app/de/">
+<link rel="alternate" hreflang="fr" href="https://yolkbook.app/fr/">
+<link rel="alternate" hreflang="nl" href="https://yolkbook.app/nl/">
+<link rel="alternate" hreflang="sv" href="https://yolkbook.app/sv/">
+<link rel="alternate" hreflang="it" href="https://yolkbook.app/it/">
+<link rel="alternate" hreflang="es" href="https://yolkbook.app/es/">
 <link rel="alternate" hreflang="x-default" href="https://yolkbook.app/">
 <link rel="icon" href="assets/favicon.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -24,48 +30,121 @@
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="pl_PL">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="sv_SE">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="es_ES">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@graph": [
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "MobileApplication",
+   "@id": "https://yolkbook.app/#app",
+   "name": "Yolkbook",
+   "alternateName": "Yolkbook: Chicken Egg Tracker",
+   "description": "Egg tracker and flock journal for backyard chickens, ducks, quail, geese and turkeys. Daily egg counts, cost per egg, hatch calendar, bird records, backups and CSV/PDF export. Data stays on the device.",
+   "url": "https://yolkbook.app/",
+   "image": "https://yolkbook.app/assets/icon.png",
+   "operatingSystem": "iOS 15 or later, Android 7.0 or later",
+   "applicationCategory": "LifestyleApplication",
+   "inLanguage": [
+    "en",
+    "pl",
+    "de",
+    "fr",
+    "nl",
+    "sv",
+    "it",
+    "es"
+   ],
+   "offers": [
     {
-      "@type": "MobileApplication",
-      "@id": "https://yolkbook.app/#app",
-      "name": "Yolkbook",
-      "alternateName": "Yolkbook: Chicken Egg Tracker",
-      "description": "Egg tracker and flock journal for backyard chickens, ducks, quail, geese and turkeys. Daily egg counts, cost per egg, hatch calendar, bird records, backups and CSV/PDF export. Data stays on the device.",
-      "url": "https://yolkbook.app/",
-      "image": "https://yolkbook.app/assets/icon.png",
-      "operatingSystem": "iOS 15 or later, Android 7.0 or later",
-      "applicationCategory": "LifestyleApplication",
-      "inLanguage": ["en", "pl", "de", "fr", "nl", "sv", "it", "es"],
-      "offers": [
-        { "@type": "Offer", "name": "Free", "price": "0", "priceCurrency": "USD" },
-        { "@type": "Offer", "name": "Yolkbook Pro (one-time)", "price": "14.99", "priceCurrency": "USD" },
-        { "@type": "Offer", "name": "Breeder Pack (one-time)", "price": "9.99", "priceCurrency": "USD" }
-      ],
-      "publisher": { "@id": "https://yolkbook.app/#org" }
+     "@type": "Offer",
+     "name": "Free",
+     "price": "0",
+     "priceCurrency": "USD"
     },
     {
-      "@type": "Organization",
-      "@id": "https://yolkbook.app/#org",
-      "name": "Marcin Pastorczyk IT",
-      "url": "https://yolkbook.app/",
-      "email": "mpwpkp@gmail.com",
-      "address": { "@type": "PostalAddress", "streetAddress": "Lipnica Wielka 92", "postalCode": "34-483", "addressLocality": "Lipnica Wielka", "addressCountry": "PL" }
+     "@type": "Offer",
+     "name": "Yolkbook Pro (one-time)",
+     "price": "14.99",
+     "priceCurrency": "USD"
     },
     {
-      "@type": "FAQPage",
-      "mainEntity": [
-        { "@type": "Question", "name": "Can I bring my old egg records?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Import daily egg counts from a spreadsheet or from another app's CSV export. You need a date column and a number of eggs; a flock column is optional." } },
-        { "@type": "Question", "name": "Can I move from iPhone to Android, or the other way?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Create a backup file in Settings, save it to cloud storage or email it to yourself, and restore it on the new phone. The file includes your photos." } },
-        { "@type": "Question", "name": "Is there a subscription?", "acceptedAnswer": { "@type": "Answer", "text": "No. The free version has no time limit. Pro and Breeder Pack are one-time purchases." } },
-        { "@type": "Question", "name": "Does Yolkbook need an internet connection?", "acceptedAnswer": { "@type": "Answer", "text": "No. Everything works offline. The app only connects to the App Store or Google Play when you buy or restore a purchase." } },
-        { "@type": "Question", "name": "Does Yolkbook give health or feeding advice?", "acceptedAnswer": { "@type": "Answer", "text": "No. Yolkbook records what you enter. Reference values such as incubation days are typical starting points and you can change them." } }
-      ]
+     "@type": "Offer",
+     "name": "Breeder Pack (one-time)",
+     "price": "9.99",
+     "priceCurrency": "USD"
     }
-  ]
+   ],
+   "publisher": {
+    "@id": "https://yolkbook.app/#org"
+   }
+  },
+  {
+   "@type": "Organization",
+   "@id": "https://yolkbook.app/#org",
+   "name": "Marcin Pastorczyk IT",
+   "url": "https://yolkbook.app/",
+   "email": "mpwpkp@gmail.com",
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Lipnica Wielka 92",
+    "postalCode": "34-483",
+    "addressLocality": "Lipnica Wielka",
+    "addressCountry": "PL"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Can I bring my old egg records?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Import daily egg counts from a spreadsheet or from another app's CSV export. You need a date column and a number of eggs; a flock column is optional."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I move from iPhone to Android, or the other way?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Create a backup file in Settings, save it to cloud storage or email it to yourself, and restore it on the new phone. The file includes your photos."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is there a subscription?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. The free version has no time limit. Pro and Breeder Pack are one-time purchases."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does Yolkbook need an internet connection?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Everything works offline. The app only connects to the App Store or Google Play when you buy or restore a purchase."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does Yolkbook give health or feeding advice?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Yolkbook records what you enter. Reference values such as incubation days are typical starting points and you can change them."
+     }
+    }
+   ]
+  }
+ ]
 }
 </script>
 </head>
@@ -79,7 +158,7 @@
       <a class="hide-sm" href="#pricing">Pricing</a>
       <a class="hide-sm" href="#faq">FAQ</a>
       <a class="hide-sm" href="support.html">Support</a>
-      <a class="lang" href="pl/" hreflang="pl" lang="pl">PL</a>
+      <details class="langmenu"><summary aria-label="English">EN</summary><ul><li><a href="" hreflang="en" lang="en" aria-current="page">English</a></li><li><a href="pl/" hreflang="pl" lang="pl">Polski</a></li><li><a href="de/" hreflang="de" lang="de">Deutsch</a></li><li><a href="fr/" hreflang="fr" lang="fr">Français</a></li><li><a href="nl/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="sv/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="it/" hreflang="it" lang="it">Italiano</a></li><li><a href="es/" hreflang="es" lang="es">Español</a></li></ul></details>
     </nav>
   </header>
 
@@ -87,21 +166,16 @@
     <section class="hero">
       <div>
         <h1>Every egg counted. Every record kept.</h1>
-        <p class="lead">Yolkbook is an egg tracker and flock journal for backyard chickens, ducks, quail, geese and turkeys. Log today's eggs in two taps, see what each egg costs you, and plan your hatches. Your records stay on your phone.</p>
-        <ul class="facts">
-          <li>Free to start</li>
-          <li>Works offline</li>
-          <li>One payment for Pro</li>
-        </ul>
+        <p class="lead">Yolkbook is an egg tracker and flock journal for backyard chickens, ducks, quail, geese and turkeys. Log today&#x27;s eggs in two taps, see what each egg costs you, and plan your hatches. Your records stay on your phone.</p>
+        <ul class="facts"><li>Free to start</li><li>Works offline</li><li>One payment for Pro</li></ul>
         <div class="stores">
-          <span class="store"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 3v13h10V5H7zm5 14.2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg><span><small>Coming soon to the</small><strong>App Store</strong></span></span>
-          <span class="store"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 3v13h10V5H7zm5 14.2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg><span><small>Coming soon to</small><strong>Google Play</strong></span></span>
+          <span class="store"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 3v13h10V5H7zm5 14.2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg><span><small>Coming soon to the</small><strong>App Store</strong></span></span><span class="store"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 3v13h10V5H7zm5 14.2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg><span><small>Coming soon to</small><strong>Google Play</strong></span></span>
           <p class="note">For iPhone, iPad and Android. Now in review at Apple and Google.</p>
         </div>
       </div>
 
       <div class="counter" data-carton data-lang="en" data-start="7" data-one="egg today" data-many="eggs today"
-           data-hint="Tap + like you would at the coop door." data-full="<strong>A full dozen.</strong> The app keeps the tally and the cost per egg for you.">
+           data-hint="Tap + like you would at the coop door." data-full="&lt;strong&gt;A full dozen.&lt;/strong&gt; The app keeps the tally and the cost per egg for you.">
         <div class="counter-head">
           <span class="counter-flock">Backyard girls</span>
           <span class="counter-meta">8 hens</span>
@@ -111,42 +185,28 @@
           <div class="counter-num" aria-live="polite"><output>0</output><span data-label>eggs today</span></div>
           <button class="round plus" type="button" data-plus aria-label="Add one egg">+</button>
         </div>
-        <div class="carton" aria-hidden="true">
-          <span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span>
-          <span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span>
-        </div>
+        <div class="carton" aria-hidden="true"><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span></div>
         <p class="counter-foot" data-foot>Tap + like you would at the coop door.</p>
       </div>
     </section>
 
     <section class="block" aria-labelledby="why">
       <h2 id="why">Apps come and go. Your egg records should stay.</h2>
-      <p class="intro">When a popular free egg tracker disappeared from the App Store, keepers lost years of laying records with it. Yolkbook is built so that can't happen to you: there is no account to close and no server of ours to shut down.</p>
-      <ul class="promises">
-        <li><h3>Stored on your phone</h3><p>Flocks, eggs, costs, hatches, notes and photos live in the app on your device. Nothing is sent to us.</p></li>
-        <li><h3>A backup in one tap</h3><p>Save one backup file to Files, iCloud Drive, Google Drive or email, and restore it on any phone, iPhone or Android.</p></li>
-        <li><h3>Plain files you can open</h3><p>Export eggs, expenses, birds and hatches as CSV for any spreadsheet, or as monthly and yearly PDF reports.</p></li>
-      </ul>
+      <p class="intro">When a popular free egg tracker disappeared from the App Store, keepers lost years of laying records with it. Yolkbook is built so that can&#x27;t happen to you: there is no account to close and no server of ours to shut down.</p>
+      <ul class="promises"><li><h3>Stored on your phone</h3><p>Flocks, eggs, costs, hatches, notes and photos live in the app on your device. Nothing is sent to us.</p></li><li><h3>A backup in one tap</h3><p>Save one backup file to Files, iCloud Drive, Google Drive or email, and restore it on any phone, iPhone or Android.</p></li><li><h3>Plain files you can open</h3><p>Export eggs, expenses, birds and hatches as CSV for any spreadsheet, or as monthly and yearly PDF reports.</p></li></ul>
     </section>
 
     <section class="block" id="features" aria-labelledby="features-title">
       <h2 id="features-title">What you can do with Yolkbook</h2>
       <p class="intro">Six screens cover the daily routine of a small flock, from the morning egg count to a hatch three weeks later.</p>
-
       <article class="feature">
         <div>
           <h3>Log the day in two taps</h3>
           <p>The Today screen has a big counter for each flock. Open the app, tap +, done.</p>
-          <ul>
-            <li>Home screen widget with +1 and −1 for each flock</li>
-            <li>Optional per-hen counts, so you see who is laying</li>
-            <li>Egg marks: double yolk, soft shell, broken and more</li>
-            <li>Track eggs sold, given away and used at home</li>
-          </ul>
+          <ul><li>Home screen widget with +1 and −1 for each flock</li><li>Optional per-hen counts, so you see who is laying</li><li>Egg marks: double yolk, soft shell, broken and more</li><li>Track eggs sold, given away and used at home</li></ul>
         </div>
         <div class="shot"><img src="assets/screens/en/1.png" width="560" height="1216" loading="lazy" alt="Today screen with an egg counter for two flocks and weekly cost per egg"></div>
       </article>
-
       <article class="feature">
         <div>
           <h3>See every day of the month</h3>
@@ -154,47 +214,30 @@
         </div>
         <div class="shot"><img src="assets/screens/en/2.png" width="560" height="1216" loading="lazy" alt="Monthly calendar with daily egg counts"></div>
       </article>
-
       <article class="feature">
         <div>
           <h3>Know what an egg really costs</h3>
           <p>Log feed, bedding and other expenses in a few seconds; the app remembers what you bought last time. Yolkbook divides your costs by your eggs.</p>
-          <ul>
-            <li>Cost per egg and per dozen, next to your store price</li>
-            <li>Egg sales and a running balance</li>
-            <li>Equipment like a new coop kept out of the cost per egg</li>
-            <li>Your own currency and pack size (6, 10, 12…)</li>
-          </ul>
+          <ul><li>Cost per egg and per dozen, next to your store price</li><li>Egg sales and a running balance</li><li>Equipment like a new coop kept out of the cost per egg</li><li>Your own currency and pack size (6, 10, 12…)</li></ul>
         </div>
         <div class="shot"><img src="assets/screens/en/3.png" width="560" height="1216" loading="lazy" alt="Money screen with cost per egg, expenses and balance"></div>
       </article>
-
       <article class="feature">
         <div>
           <h3>A card for every bird</h3>
           <p>Name your hens and keep their photos, breed, hatch date and status: laying, broody, molting, not laying. Each bird has a history and its own notes.</p>
-          <ul>
-            <li>Notes with dates, tags and photos, in your own words</li>
-            <li>Reminders on your schedule, such as cleaning the coop</li>
-            <li>Location data removed from every photo you add</li>
-          </ul>
+          <ul><li>Notes with dates, tags and photos, in your own words</li><li>Reminders on your schedule, such as cleaning the coop</li><li>Location data removed from every photo you add</li></ul>
         </div>
-        <div class="shot"><img src="assets/screens/en/4.png" width="560" height="1216" loading="lazy" alt="A hen's card with photo, status and history"></div>
+        <div class="shot"><img src="assets/screens/en/4.png" width="560" height="1216" loading="lazy" alt="A hen&#x27;s card with photo, status and history"></div>
       </article>
-
       <article class="feature">
         <div>
           <h3>Hatches on a calendar</h3>
           <p>Set eggs in the incubator or under a broody hen and Yolkbook lays out the candling days, lockdown and hatch day, with a reminder for each.</p>
-          <ul>
-            <li>Hatch rate from eggs set and from fertile eggs</li>
-            <li>Add the hatched chicks to a flock in one tap</li>
-            <li>Typical day counts for six species, always editable</li>
-          </ul>
+          <ul><li>Hatch rate from eggs set and from fertile eggs</li><li>Add the hatched chicks to a flock in one tap</li><li>Typical day counts for six species, always editable</li></ul>
         </div>
         <div class="shot"><img src="assets/screens/en/5.png" width="560" height="1216" loading="lazy" alt="Incubation timeline with candling days and hatch day"></div>
       </article>
-
       <article class="feature">
         <div>
           <h3>Charts and reports <span class="tag">Pro for full history</span></h3>
@@ -206,30 +249,18 @@
 
     <section class="block" aria-labelledby="species-title">
       <h2 id="species-title">Made for the birds you keep</h2>
-      <p class="intro">Each flock has its own species, so hatch calendars start from the right number of days.</p>
-      <dl class="species">
-        <div><dt>Chickens</dt><dd><span class="days">21</span>days to hatch</dd></div>
-        <div><dt>Ducks</dt><dd><span class="days">28</span>days to hatch</dd></div>
-        <div><dt>Muscovy ducks</dt><dd><span class="days">35</span>days to hatch</dd></div>
-        <div><dt>Quail</dt><dd><span class="days">17</span>days to hatch</dd></div>
-        <div><dt>Geese</dt><dd><span class="days">30</span>days to hatch</dd></div>
-        <div><dt>Turkeys</dt><dd><span class="days">28</span>days to hatch</dd></div>
-      </dl>
-      <p class="fineprint">Typical values used as a starting point. You can change them for every hatch. Yolkbook doesn't give veterinary or feeding advice; it records what you enter.</p>
+      <p class="intro">Each flock has its own species, so hatch calendars start from that species&#x27; typical number of days.</p>
+      <dl class="species"><div><dt>Chickens</dt><dd><span class="days">21</span>days to hatch</dd></div><div><dt>Ducks</dt><dd><span class="days">28</span>days to hatch</dd></div><div><dt>Muscovy ducks</dt><dd><span class="days">35</span>days to hatch</dd></div><div><dt>Quail</dt><dd><span class="days">17</span>days to hatch</dd></div><div><dt>Geese</dt><dd><span class="days">30</span>days to hatch</dd></div><div><dt>Turkeys</dt><dd><span class="days">28</span>days to hatch</dd></div></dl>
+      <p class="fineprint">Typical values used as a starting point. You can change them for every hatch. Yolkbook doesn&#x27;t give veterinary or feeding advice; it records what you enter.</p>
     </section>
 
     <section class="block" aria-labelledby="privacy-title">
       <div class="band">
         <div>
-          <h2 id="privacy-title">Your flock's data stays on your phone</h2>
+          <h2 id="privacy-title">Your flock&#x27;s data stays on your phone</h2>
           <p class="intro">We built Yolkbook without accounts or servers, so there is nothing of yours for us to store, sell or lose.</p>
-          <ul>
-            <li><strong>No sign-up</strong>Open the app and start counting.</li>
-            <li><strong>No ads or tracking</strong>The app has no analytics of any kind.</li>
-            <li><strong>Offline</strong>The only connection is the store, when you buy.</li>
-            <li><strong>Safety copies</strong>The app saves a copy before every restore and update.</li>
-          </ul>
-          <p class="fineprint" style="color: var(--on-band-muted)">Your phone's own iCloud or Google backup may include the app's data in your account. <a href="privacy.html">Read the privacy policy</a>.</p>
+          <ul><li><strong>No sign-up</strong>Open the app and start counting.</li><li><strong>No ads or tracking</strong>The app has no analytics of any kind.</li><li><strong>Offline</strong>The only connection is the store, when you buy.</li><li><strong>Safety copies</strong>The app saves a copy before every restore and update.</li></ul>
+          <p class="fineprint band-fine">Your phone&#x27;s own iCloud or Google backup may include the app&#x27;s data in your account. <a href="privacy.html">Read the privacy policy</a>.</p>
         </div>
         <div class="shot"><img src="assets/screens/en/6.png" width="560" height="1216" loading="lazy" alt="Backup and restore screen"></div>
       </div>
@@ -238,60 +269,19 @@
     <section class="block" id="pricing" aria-labelledby="pricing-title">
       <h2 id="pricing-title">Pay once, or never</h2>
       <p class="intro">The free version has no time limit and covers a small flock completely. Pro removes the limits with a single payment.</p>
-      <div class="plans">
-        <div class="plan">
-          <h3>Free</h3>
-          <p class="price">$0</p>
-          <p class="per">for as long as you like</p>
-          <ul>
-            <li>Egg counter and home screen widget</li>
-            <li>Cost per egg, sales and balance</li>
-            <li>1 flock with up to 6 named birds</li>
-            <li>1 incubation at a time</li>
-            <li>Statistics for the last 90 days</li>
-            <li>Backups and CSV export</li>
-          </ul>
-        </div>
-        <div class="plan pro">
-          <h3>Pro</h3>
-          <p class="price">$14.99</p>
-          <p class="per">one payment, no subscription</p>
-          <ul>
-            <li>Everything in Free</li>
-            <li>Unlimited flocks and birds</li>
-            <li>Several incubations at once</li>
-            <li>All your history in charts and balance</li>
-            <li>Monthly and yearly PDF reports</li>
-          </ul>
-          <div class="extra"><p>Try every Pro feature free for 14 days. You start the trial when you choose, and nothing is charged afterwards.</p></div>
-        </div>
-        <div class="plan">
-          <h3>Breeder Pack</h3>
-          <p class="price">$9.99</p>
-          <p class="per">one-time add-on</p>
-          <ul>
-            <li>Simple pedigree: mother, father, offspring and a three-generation tree</li>
-            <li>Hatch history by incubator, parents, species and year</li>
-            <li>Hatch card PDF for selling chicks</li>
-          </ul>
-          <div class="extra"><p>Pro and Breeder Pack together: $19.99.</p></div>
-        </div>
-      </div>
+      <div class="plans"><div class="plan"><h3>Free</h3><p class="price">$0</p><p class="per">for as long as you like</p><ul><li>Egg counter and home screen widget</li><li>Cost per egg, sales and balance</li><li>1 flock with up to 6 named birds</li><li>1 incubation at a time</li><li>Statistics for the last 90 days</li><li>Backups and CSV export</li></ul></div><div class="plan pro"><h3>Pro</h3><p class="price">$14.99</p><p class="per">one payment, no subscription</p><ul><li>Everything in Free</li><li>Unlimited flocks and birds</li><li>Several incubations at once</li><li>All your history in charts and balance</li><li>Monthly and yearly PDF reports</li></ul><div class="extra"><p>Try every Pro feature free for 14 days. You start the trial when you choose, and nothing is charged afterwards.</p></div></div><div class="plan"><h3>Breeder Pack</h3><p class="price">$9.99</p><p class="per">one-time add-on</p><ul><li>Simple pedigree: mother, father, offspring and a three-generation tree</li><li>Hatch history by incubator, parents, species and year</li><li>Hatch card PDF for selling chicks</li></ul><div class="extra"><p>Pro and Breeder Pack together: $19.99.</p></div></div></div>
       <p class="pricing-note">Prices in US dollars. The App Store and Google Play show the price in your currency. Purchases are tied to your Apple ID or Google account and can be restored on a new phone.</p>
     </section>
 
     <section class="block" aria-labelledby="langs-title">
       <h2 id="langs-title">In eight languages</h2>
-      <p class="intro">The app follows your phone's language, including dates, numbers and currency.</p>
-      <ul class="langs">
-        <li lang="en">English</li><li lang="pl">Polski</li><li lang="de">Deutsch</li><li lang="fr">Français</li>
-        <li lang="nl">Nederlands</li><li lang="sv">Svenska</li><li lang="it">Italiano</li><li lang="es">Español</li>
-      </ul>
+      <p class="intro">The app follows your phone&#x27;s language, including dates, numbers and currency.</p>
+      <ul class="langs"><li lang="en">English</li><li lang="pl">Polski</li><li lang="de">Deutsch</li><li lang="fr">Français</li><li lang="nl">Nederlands</li><li lang="sv">Svenska</li><li lang="it">Italiano</li><li lang="es">Español</li></ul>
     </section>
 
     <section class="block faq" id="faq" aria-labelledby="faq-title">
       <h2 id="faq-title">Questions keepers ask</h2>
-      <details><summary>Can I bring my old egg records?</summary><p>Yes. Import daily egg counts from a spreadsheet or from another app's CSV export. You need a date column and a number of eggs; a flock column is optional.</p></details>
+      <details><summary>Can I bring my old egg records?</summary><p>Yes. Import daily egg counts from a spreadsheet or from another app&#x27;s CSV export. You need a date column and a number of eggs; a flock column is optional.</p></details>
       <details><summary>Can I move from iPhone to Android, or the other way?</summary><p>Yes. Create a backup file in Settings, save it to cloud storage or email it to yourself, and restore it on the new phone. The file includes your photos.</p></details>
       <details><summary>Two of us look after the hens. Can we share one flock?</summary><p>Each phone keeps its own records, and there is no live sync yet. You can merge a backup file from another phone; when both phones logged the same day, the newer entry is kept.</p></details>
       <details><summary>Is there a subscription?</summary><p>No. The free version has no time limit. Pro and Breeder Pack are one-time purchases.</p></details>
@@ -299,20 +289,17 @@
       <details><summary>Does Yolkbook need an internet connection?</summary><p>No. Everything works offline. The app only connects to the App Store or Google Play when you buy or restore a purchase.</p></details>
       <details><summary>Which phones does it run on?</summary><p>iPhone and iPad with iOS 15 or later, and Android phones and tablets with Android 7.0 or later. The interactive widget needs iOS 17 on iPhone.</p></details>
       <details><summary>Does Yolkbook give health or feeding advice?</summary><p>No. Yolkbook records what you enter. Reference values such as incubation days are typical starting points and you can change them.</p></details>
-    </section>
+      </section>
 
     <section class="closing" aria-labelledby="closing-title">
-      <h2 id="closing-title">Start with today's eggs</h2>
+      <h2 id="closing-title">Start with today&#x27;s eggs</h2>
       <p>Install Yolkbook, name your flock and tap + for the first egg. It takes less than a minute.</p>
-      <div class="stores">
-        <span class="store"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 3v13h10V5H7zm5 14.2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg><span><small>Coming soon to the</small><strong>App Store</strong></span></span>
-        <span class="store"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 3v13h10V5H7zm5 14.2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg><span><small>Coming soon to</small><strong>Google Play</strong></span></span>
-      </div>
+      <div class="stores"><span class="store"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 3v13h10V5H7zm5 14.2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg><span><small>Coming soon to the</small><strong>App Store</strong></span></span><span class="store"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 3v13h10V5H7zm5 14.2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg><span><small>Coming soon to</small><strong>Google Play</strong></span></span></div>
     </section>
   </main>
 
   <footer class="bottom">
-    <p class="links"><a href="#features">Features</a><a href="#pricing">Pricing</a><a href="support.html">Support</a><a href="privacy.html">Privacy policy</a><a href="pl/" hreflang="pl" lang="pl">Polski</a></p>
+    <p class="links"><a href="#features">Features</a><a href="#pricing">Pricing</a><a href="support.html">Support</a><a href="privacy.html">Privacy policy</a></p>
     <p>Yolkbook is made by Marcin Pastorczyk IT, Lipnica Wielka 92, 34-483 Lipnica Wielka, Poland. Tax ID (NIP) 7352613805. <a href="mailto:mpwpkp@gmail.com">mpwpkp@gmail.com</a></p>
   </footer>
 </div>

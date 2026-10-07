@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yolkbook: contador de huevos y puesta de gallinas</title>
+<meta name="description" content="Cuenta los huevos de tus gallinas con un toque, mira cuánto cuesta cada huevo y planea incubaciones. Gallinas, patos, codornices y más. Datos en tu teléfono.">
+<link rel="canonical" href="https://yolkbook.app/es/">
+<link rel="alternate" hreflang="en" href="https://yolkbook.app/">
+<link rel="alternate" hreflang="pl" href="https://yolkbook.app/pl/">
+<link rel="alternate" hreflang="de" href="https://yolkbook.app/de/">
+<link rel="alternate" hreflang="fr" href="https://yolkbook.app/fr/">
+<link rel="alternate" hreflang="nl" href="https://yolkbook.app/nl/">
+<link rel="alternate" hreflang="sv" href="https://yolkbook.app/sv/">
+<link rel="alternate" hreflang="it" href="https://yolkbook.app/it/">
+<link rel="alternate" hreflang="es" href="https://yolkbook.app/es/">
+<link rel="alternate" hreflang="x-default" href="https://yolkbook.app/">
+<link rel="icon" href="../assets/favicon.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="preload" href="../assets/fonts/Manrope-ExtraBold.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="../assets/style.css">
+<meta name="theme-color" content="#F6F7F4">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Yolkbook">
+<meta property="og:url" content="https://yolkbook.app/es/">
+<meta property="og:title" content="Yolkbook: contador de huevos y diario del lote">
+<meta property="og:description" content="Cuenta huevos con un toque, mira cuánto cuesta cada uno y planea tus incubaciones. Tus datos se quedan en tu teléfono. Pagas una vez.">
+<meta property="og:image" content="https://yolkbook.app/assets/og-en.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="pl_PL">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="sv_SE">
+<meta property="og:locale:alternate" content="it_IT">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "MobileApplication",
+   "@id": "https://yolkbook.app/#app",
+   "name": "Yolkbook",
+   "alternateName": "Yolkbook: contador de huevos de gallina",
+   "description": "Contador de huevos y diario del lote para quienes crían en casa gallinas, patos, codornices, gansos y pavos. Recuento diario de huevos, costo por huevo, calendario de incubación, fichas de cada ave, copias de seguridad y exportación CSV/PDF. Los datos se quedan en el dispositivo.",
+   "url": "https://yolkbook.app/es/",
+   "image": "https://yolkbook.app/assets/icon.png",
+   "operatingSystem": "iOS 15 o posterior, Android 7.0 o posterior",
+   "applicationCategory": "LifestyleApplication",
+   "inLanguage": [
+    "es",
+    "en",
+    "pl",
+    "de",
+    "fr",
+    "nl",
+    "sv",
+    "it"
+   ],
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "Versión gratuita",
+     "price": "0",
+     "priceCurrency": "USD"
+    },
+    {
+     "@type": "Offer",
+     "name": "Yolkbook Pro (pago único)",
+     "price": "14.99",
+     "priceCurrency": "USD"
+    },
+    {
+     "@type": "Offer",
+     "name": "Breeder Pack (pago único)",
+     "price": "9.99",
+     "priceCurrency": "USD"
+    }
+   ],
+   "publisher": {
+    "@id": "https://yolkbook.app/#org"
+   }
+  },
+  {
+   "@type": "Organization",
+   "@id": "https://yolkbook.app/#org",
+   "name": "Marcin Pastorczyk IT",
+   "url": "https://yolkbook.app/",
+   "email": "mpwpkp@gmail.com",
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Lipnica Wielka 92",
+    "postalCode": "34-483",
+    "addressLocality": "Lipnica Wielka",
+    "addressCountry": "PL"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "¿Puedo traer mis registros de huevos anteriores?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sí. Importa recuentos diarios de huevos desde una hoja de cálculo o desde el CSV exportado de otra app. Necesitas una columna de fecha y otra con el número de huevos; la columna de lote es opcional."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Puedo pasar de iPhone a Android, o al revés?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sí. Crea un archivo de copia de seguridad en Ajustes, guárdalo en la nube o envíatelo por correo y restáuralo en el teléfono nuevo. El archivo incluye tus fotos."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Hay suscripción?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. La versión gratuita no tiene límite de tiempo. Pro y Breeder Pack son compras de pago único."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Yolkbook necesita conexión a internet?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Todo funciona sin conexión. La app solo se conecta a la App Store o a Google Play cuando compras o restauras una compra."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Yolkbook ofrece asesoramiento sobre salud o alimentación?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Yolkbook registra lo que tú escribes. Los valores de referencia, como los días de incubación, son puntos de partida típicos y puedes cambiarlos."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Ir al contenido</a>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="./"><img src="../assets/icon.png" alt="" width="36" height="36">Yolkbook</a>
+    <nav class="top" aria-label="Principal">
+      <a class="hide-sm" href="#funciones">Funciones</a>
+      <a class="hide-sm" href="#precios">Precios</a>
+      <a class="hide-sm" href="#preguntas">Preguntas</a>
+      <a class="hide-sm" href="../support.html">Ayuda</a>
+      <details class="langmenu"><summary aria-label="Español">ES</summary><ul><li><a href="../" hreflang="en" lang="en">English</a></li><li><a href="../pl/" hreflang="pl" lang="pl">Polski</a></li><li><a href="../de/" hreflang="de" lang="de">Deutsch</a></li><li><a href="../fr/" hreflang="fr" lang="fr">Français</a></li><li><a href="../nl/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="../sv/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="../it/" hreflang="it" lang="it">Italiano</a></li><li><a href="../es/" hreflang="es" lang="es" aria-current="page">Español</a></li></ul></details>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div>
+        <h1>Cada huevo contado. Cada registro guardado.</h1>
+        <p class="lead">Yolkbook es un contador de huevos y un diario del lote para quienes crían en casa gallinas, patos, codornices, gansos y pavos. Anota los huevos de hoy con dos toques, mira cuánto te cuesta cada huevo y planea tus incubaciones. Tus registros se quedan en tu teléfono.</p>
+        <ul class="facts"><li>Gratis para empezar</li><li>Funciona sin internet</li><li>Pro con un solo pago</li></ul>
+        <div class="stores">
+          <span class="store"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 3v13h10V5H7zm5 14.2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg><span><small>Muy pronto en</small><strong>App Store</strong></span></span><span class="store"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 3v13h10V5H7zm5 14.2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg><span><small>Muy pronto en</small><strong>Google Play</strong></span></span>
+          <p class="note">Para iPhone, iPad y Android. Ahora en revisión en Apple y Google.</p>
+        </div>
+      </div>
+
+      <div class="counter" data-carton data-lang="es" data-start="7" data-one="huevo hoy" data-many="huevos hoy"
+           data-hint="Toca + como lo harías en la puerta del gallinero." data-full="&lt;strong&gt;Una docena completa.&lt;/strong&gt; La app lleva la cuenta y el costo por huevo por ti.">
+        <div class="counter-head">
+          <span class="counter-flock">Gallinas del patio</span>
+          <span class="counter-meta">8 gallinas</span>
+        </div>
+        <div class="counter-row">
+          <button class="round" type="button" data-minus aria-label="Quitar un huevo">−</button>
+          <div class="counter-num" aria-live="polite"><output>0</output><span data-label>huevos hoy</span></div>
+          <button class="round plus" type="button" data-plus aria-label="Añadir un huevo">+</button>
+        </div>
+        <div class="carton" aria-hidden="true"><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span></div>
+        <p class="counter-foot" data-foot>Toca + como lo harías en la puerta del gallinero.</p>
+      </div>
+    </section>
+
+    <section class="block" aria-labelledby="why">
+      <h2 id="why">Las apps van y vienen. Tus registros de puesta se quedan.</h2>
+      <p class="intro">Cuando un contador de huevos gratuito y muy popular desapareció de la App Store, mucha gente perdió con él años de registros de puesta. Yolkbook está hecho para que eso no te pase a ti: no hay cuenta que se pueda cerrar ni un servidor nuestro que se pueda apagar.</p>
+      <ul class="promises"><li><h3>Guardado en tu teléfono</h3><p>Lotes, huevos, costos, incubaciones, notas y fotos viven en la app de tu dispositivo. No nos llega nada.</p></li><li><h3>Copia de seguridad con un toque</h3><p>Guarda un archivo de copia en Archivos, iCloud Drive, Google Drive o en tu correo, y restáuralo en cualquier teléfono, iPhone o Android.</p></li><li><h3>Archivos comunes que puedes abrir</h3><p>Exporta huevos, gastos, aves e incubaciones en CSV para cualquier hoja de cálculo, o como informes PDF mensuales y anuales.</p></li></ul>
+    </section>
+
+    <section class="block" id="funciones" aria-labelledby="features-title">
+      <h2 id="features-title">Lo que puedes hacer con Yolkbook</h2>
+      <p class="intro">Seis pantallas cubren el día a día de un lote pequeño, desde el recuento de huevos de la mañana hasta una eclosión tres semanas después.</p>
+      <article class="feature">
+        <div>
+          <h3>Anota el día con dos toques</h3>
+          <p>La pantalla Hoy tiene un contador grande para cada lote. Abres la app, tocas + y listo.</p>
+          <ul><li>Widget en la pantalla de inicio con +1 y −1 para cada lote</li><li>Recuento por gallina opcional, para ver quién está poniendo</li><li>Marcas de huevo: dos yemas, cáscara blanda, roto y más</li><li>Huevos vendidos, regalados y para consumo propio</li></ul>
+        </div>
+        <div class="shot"><img src="../assets/screens/en/1.png" width="560" height="1216" loading="lazy" alt="Pantalla Hoy con un contador de huevos para dos lotes y el costo por huevo de la semana"></div>
+      </article>
+      <article class="feature">
+        <div>
+          <h3>Todos los días del mes a la vista</h3>
+          <p>Un calendario colorea cada día según cuántos huevos recogiste. Los días que olvidaste anotar se ven distintos de los días con cero huevos, así es fácil completar lo que falta.</p>
+        </div>
+        <div class="shot"><img src="../assets/screens/en/2.png" width="560" height="1216" loading="lazy" alt="Calendario mensual con el recuento diario de huevos"></div>
+      </article>
+      <article class="feature">
+        <div>
+          <h3>Lo que de verdad cuesta un huevo</h3>
+          <p>Anota alimento, cama y otros gastos en unos segundos; la app recuerda lo que compraste la última vez. Yolkbook divide tus costos entre tus huevos.</p>
+          <ul><li>Costo por huevo y por docena, junto al precio de la tienda</li><li>Venta de huevos y balance acumulado</li><li>El equipo, como un gallinero nuevo, fuera del costo por huevo</li><li>Tu propia moneda y tamaño de paquete (6, 10, 12…)</li></ul>
+        </div>
+        <div class="shot"><img src="../assets/screens/en/3.png" width="560" height="1216" loading="lazy" alt="Pantalla Finanzas con costo por huevo, gastos y balance"></div>
+      </article>
+      <article class="feature">
+        <div>
+          <h3>Una ficha para cada ave</h3>
+          <p>Ponle nombre a tus gallinas y guarda su foto, raza, fecha de nacimiento y estado: en puesta, clueca, en muda, no pone. Cada ave tiene su historial y sus propias notas.</p>
+          <ul><li>Notas con fecha, etiquetas y fotos, con tus propias palabras</li><li>Recordatorios con tu propio horario, como limpiar el gallinero</li><li>Los datos de ubicación se eliminan de cada foto que añades</li></ul>
+        </div>
+        <div class="shot"><img src="../assets/screens/en/4.png" width="560" height="1216" loading="lazy" alt="Ficha de una gallina con foto, estado e historial"></div>
+      </article>
+      <article class="feature">
+        <div>
+          <h3>Incubaciones en el calendario</h3>
+          <p>Pon huevos a incubar en la incubadora o bajo una gallina clueca y Yolkbook marca los días de ovoscopia, la fase final y el día de eclosión, con un recordatorio para cada uno.</p>
+          <ul><li>Tasa de eclosión sobre huevos incubados y sobre huevos fértiles</li><li>Añade los pollitos nacidos a un lote con un toque</li><li>Días típicos para seis especies, siempre editables</li></ul>
+        </div>
+        <div class="shot"><img src="../assets/screens/en/5.png" width="560" height="1216" loading="lazy" alt="Cronología de la incubación con días de ovoscopia y día de eclosión"></div>
+      </article>
+      <article class="feature">
+        <div>
+          <h3>Gráficos e informes <span class="tag">Pro para todo el historial</span></h3>
+          <p>Gráficos de huevos, huevos por lote, tasa de puesta, costo por huevo, alimento por mes y balance. Además, cómo va este mes frente al mismo mes del año pasado y cuántos huevos puso cada gallina con nombre.</p>
+        </div>
+        <div class="shot"><img src="../assets/screens/en/7.png" width="560" height="1216" loading="lazy" alt="Estadísticas con un gráfico de huevos de los últimos 30 días"></div>
+      </article>
+    </section>
+
+    <section class="block" aria-labelledby="species-title">
+      <h2 id="species-title">Para las aves que crías</h2>
+      <p class="intro">Cada lote tiene su especie, así el calendario de incubación arranca con el número de días típico de esa especie.</p>
+      <dl class="species"><div><dt>Gallinas</dt><dd><span class="days">21</span>días hasta la eclosión</dd></div><div><dt>Patos</dt><dd><span class="days">28</span>días hasta la eclosión</dd></div><div><dt>Patos criollos</dt><dd><span class="days">35</span>días hasta la eclosión</dd></div><div><dt>Codornices</dt><dd><span class="days">17</span>días hasta la eclosión</dd></div><div><dt>Gansos</dt><dd><span class="days">30</span>días hasta la eclosión</dd></div><div><dt>Pavos</dt><dd><span class="days">28</span>días hasta la eclosión</dd></div></dl>
+      <p class="fineprint">Valores típicos que sirven como punto de partida. Puedes cambiarlos en cada incubación. Yolkbook no ofrece asesoramiento veterinario ni de alimentación; registra lo que tú escribes.</p>
+    </section>
+
+    <section class="block" aria-labelledby="privacy-title">
+      <div class="band">
+        <div>
+          <h2 id="privacy-title">Los datos de tu lote se quedan en tu teléfono</h2>
+          <p class="intro">Hicimos Yolkbook sin cuentas ni servidores, así que no tenemos nada tuyo que guardar, vender o perder.</p>
+          <ul><li><strong>Sin registro</strong>Abre la app y empieza a contar.</li><li><strong>Sin anuncios ni rastreo</strong>La app no tiene ningún tipo de analítica.</li><li><strong>Sin internet</strong>La única conexión es con la tienda, cuando compras.</li><li><strong>Copias automáticas</strong>La app guarda una copia antes de cada restauración y actualización.</li></ul>
+          <p class="fineprint band-fine">La copia de seguridad de iCloud o de Google de tu propio teléfono puede incluir los datos de la app en tu cuenta. <a href="../privacy.html">Lee la política de privacidad (en inglés)</a>.</p>
+        </div>
+        <div class="shot"><img src="../assets/screens/en/6.png" width="560" height="1216" loading="lazy" alt="Pantalla de copia de seguridad y restauración"></div>
+      </div>
+    </section>
+
+    <section class="block" id="precios" aria-labelledby="pricing-title">
+      <h2 id="pricing-title">Pagas una vez o nunca</h2>
+      <p class="intro">La versión gratuita no tiene límite de tiempo y cubre por completo un lote pequeño. Pro quita los límites con un solo pago.</p>
+      <div class="plans"><div class="plan"><h3>Gratis</h3><p class="price">US$0</p><p class="per">por el tiempo que quieras</p><ul><li>Contador de huevos y widget en la pantalla de inicio</li><li>Costo por huevo, ventas y balance</li><li>1 lote con hasta 6 aves con nombre</li><li>1 incubación a la vez</li><li>Estadísticas de los últimos 90 días</li><li>Copias de seguridad y exportación CSV</li></ul></div><div class="plan pro"><h3>Pro</h3><p class="price">US$14.99</p><p class="per">un solo pago, sin suscripción</p><ul><li>Todo lo de la versión gratuita</li><li>Lotes y aves ilimitados</li><li>Varias incubaciones a la vez</li><li>Todo tu historial en gráficos y balance</li><li>Informes PDF mensuales y anuales</li></ul><div class="extra"><p>Prueba todas las funciones de Pro gratis durante 14 días. Tú decides cuándo empezar la prueba y después no se cobra nada.</p></div></div><div class="plan"><h3>Breeder Pack</h3><p class="price">US$9.99</p><p class="per">complemento de pago único</p><ul><li>Genealogía sencilla: madre, padre, descendencia y un árbol de tres generaciones</li><li>Historial de incubaciones por incubadora, padres, especie y año</li><li>Ficha de nacimiento en PDF para vender pollitos</li></ul><div class="extra"><p>Pro y Breeder Pack juntos: US$19.99.</p></div></div></div>
+      <p class="pricing-note">Precios en dólares estadounidenses. La App Store y Google Play muestran el precio en tu moneda. Las compras quedan vinculadas a tu Apple ID o a tu cuenta de Google y se pueden restaurar en un teléfono nuevo.</p>
+    </section>
+
+    <section class="block" aria-labelledby="langs-title">
+      <h2 id="langs-title">En ocho idiomas</h2>
+      <p class="intro">La app usa el idioma de tu teléfono, también para fechas, números y moneda.</p>
+      <ul class="langs"><li lang="es">Español</li><li lang="en">English</li><li lang="pl">Polski</li><li lang="de">Deutsch</li><li lang="fr">Français</li><li lang="nl">Nederlands</li><li lang="sv">Svenska</li><li lang="it">Italiano</li></ul>
+    </section>
+
+    <section class="block faq" id="preguntas" aria-labelledby="faq-title">
+      <h2 id="faq-title">Preguntas frecuentes de quienes crían aves</h2>
+      <details><summary>¿Puedo traer mis registros de huevos anteriores?</summary><p>Sí. Importa recuentos diarios de huevos desde una hoja de cálculo o desde el CSV exportado de otra app. Necesitas una columna de fecha y otra con el número de huevos; la columna de lote es opcional.</p></details>
+      <details><summary>¿Puedo pasar de iPhone a Android, o al revés?</summary><p>Sí. Crea un archivo de copia de seguridad en Ajustes, guárdalo en la nube o envíatelo por correo y restáuralo en el teléfono nuevo. El archivo incluye tus fotos.</p></details>
+      <details><summary>Somos dos los que cuidamos las gallinas. ¿Podemos compartir un lote?</summary><p>Cada teléfono guarda sus propios registros y por ahora no hay sincronización en tiempo real. Puedes combinar un archivo de copia de otro teléfono; si los dos teléfonos anotaron el mismo día, se queda el registro más reciente.</p></details>
+      <details><summary>¿Hay suscripción?</summary><p>No. La versión gratuita no tiene límite de tiempo. Pro y Breeder Pack son compras de pago único.</p></details>
+      <details><summary>¿Qué pasa cuando termina la prueba de 14 días?</summary><p>La app vuelve a la versión gratuita. Todo lo que registraste se queda, y puedes seguir viéndolo y exportándolo.</p></details>
+      <details><summary>¿Yolkbook necesita conexión a internet?</summary><p>No. Todo funciona sin conexión. La app solo se conecta a la App Store o a Google Play cuando compras o restauras una compra.</p></details>
+      <details><summary>¿En qué teléfonos funciona?</summary><p>iPhone y iPad con iOS 15 o posterior, y teléfonos y tabletas Android con Android 7.0 o posterior. El widget interactivo necesita iOS 17 en iPhone.</p></details>
+      <details><summary>¿Yolkbook ofrece asesoramiento sobre salud o alimentación?</summary><p>No. Yolkbook registra lo que tú escribes. Los valores de referencia, como los días de incubación, son puntos de partida típicos y puedes cambiarlos.</p></details>
+      </section>
+
+    <section class="closing" aria-labelledby="closing-title">
+      <h2 id="closing-title">Empieza con los huevos de hoy</h2>
+      <p>Instala Yolkbook, ponle nombre a tu lote y toca + para el primer huevo. Te toma menos de un minuto.</p>
+      <div class="stores"><span class="store"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 3v13h10V5H7zm5 14.2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg><span><small>Muy pronto en</small><strong>App Store</strong></span></span><span class="store"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 3v13h10V5H7zm5 14.2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg><span><small>Muy pronto en</small><strong>Google Play</strong></span></span></div>
+    </section>
+  </main>
+
+  <footer class="bottom">
+    <p class="links"><a href="#funciones">Funciones</a><a href="#precios">Precios</a><a href="../support.html">Ayuda</a><a href="../privacy.html">Política de privacidad</a></p>
+    <p>Yolkbook es un producto de Marcin Pastorczyk IT, Lipnica Wielka 92, 34-483 Lipnica Wielka, Polonia. Identificación fiscal (NIP) 7352613805. <a href="mailto:mpwpkp@gmail.com">mpwpkp@gmail.com</a></p>
+  </footer>
+</div>
+<script src="../assets/carton.js" defer></script>
+</body>
+</html>

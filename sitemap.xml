@@ -2,42 +2,120 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://yolkbook.app/</loc>
-    <lastmod>2026-10-07</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://yolkbook.app/"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://yolkbook.app/pl/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yolkbook.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yolkbook.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://yolkbook.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://yolkbook.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://yolkbook.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yolkbook.app/es/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yolkbook.app/"/>
   </url>
   <url>
     <loc>https://yolkbook.app/pl/</loc>
-    <lastmod>2026-10-07</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://yolkbook.app/"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://yolkbook.app/pl/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yolkbook.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yolkbook.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://yolkbook.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://yolkbook.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://yolkbook.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yolkbook.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yolkbook.app/"/>
+  </url>
+  <url>
+    <loc>https://yolkbook.app/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yolkbook.app/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://yolkbook.app/pl/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yolkbook.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yolkbook.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://yolkbook.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://yolkbook.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://yolkbook.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yolkbook.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yolkbook.app/"/>
+  </url>
+  <url>
+    <loc>https://yolkbook.app/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yolkbook.app/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://yolkbook.app/pl/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yolkbook.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yolkbook.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://yolkbook.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://yolkbook.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://yolkbook.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yolkbook.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yolkbook.app/"/>
+  </url>
+  <url>
+    <loc>https://yolkbook.app/nl/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yolkbook.app/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://yolkbook.app/pl/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yolkbook.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yolkbook.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://yolkbook.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://yolkbook.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://yolkbook.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yolkbook.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yolkbook.app/"/>
+  </url>
+  <url>
+    <loc>https://yolkbook.app/sv/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yolkbook.app/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://yolkbook.app/pl/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yolkbook.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yolkbook.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://yolkbook.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://yolkbook.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://yolkbook.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yolkbook.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yolkbook.app/"/>
+  </url>
+  <url>
+    <loc>https://yolkbook.app/it/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yolkbook.app/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://yolkbook.app/pl/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yolkbook.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yolkbook.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://yolkbook.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://yolkbook.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://yolkbook.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yolkbook.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yolkbook.app/"/>
+  </url>
+  <url>
+    <loc>https://yolkbook.app/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yolkbook.app/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://yolkbook.app/pl/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yolkbook.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yolkbook.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://yolkbook.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://yolkbook.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://yolkbook.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yolkbook.app/es/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yolkbook.app/"/>
   </url>
   <url>
     <loc>https://yolkbook.app/support.html</loc>
-    <lastmod>2026-10-07</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://yolkbook.app/support.html"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://yolkbook.app/pl/support.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yolkbook.app/support.html"/>
   </url>
   <url>
     <loc>https://yolkbook.app/pl/support.html</loc>
-    <lastmod>2026-10-07</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://yolkbook.app/support.html"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://yolkbook.app/pl/support.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yolkbook.app/support.html"/>
   </url>
   <url>
     <loc>https://yolkbook.app/privacy.html</loc>
-    <lastmod>2026-10-07</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://yolkbook.app/privacy.html"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://yolkbook.app/pl/privacy.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yolkbook.app/privacy.html"/>
   </url>
   <url>
     <loc>https://yolkbook.app/pl/privacy.html</loc>
-    <lastmod>2026-10-07</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://yolkbook.app/privacy.html"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://yolkbook.app/pl/privacy.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yolkbook.app/privacy.html"/>
