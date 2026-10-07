@@ -3,85 +3,319 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Yolkbook — dziennik jajek</title>
-<meta name="description" content="Licz jajka jednym dotknięciem, sprawdzaj, ile kosztuje jajko, planuj wylęgi. Dane zostają w Twoim telefonie. Bez konta, bez subskrypcji.">
+<title>Yolkbook – licznik jajek i dziennik kurnika na telefon</title>
+<meta name="description" content="Licz jajka od kur jednym dotknięciem, sprawdzaj koszt jednego jajka i planuj wylęgi. Dla kur, kaczek, przepiórek, gęsi i indyków. Dane zostają w telefonie.">
+<link rel="canonical" href="https://yolkbook.app/pl/">
+<link rel="alternate" hreflang="en" href="https://yolkbook.app/">
+<link rel="alternate" hreflang="pl" href="https://yolkbook.app/pl/">
+<link rel="alternate" hreflang="x-default" href="https://yolkbook.app/">
 <link rel="icon" href="../assets/favicon.png">
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
-<link rel="alternate" hreflang="en" href="../">
+<link rel="preload" href="../assets/fonts/Manrope-ExtraBold.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="stylesheet" href="../assets/style.css">
+<meta name="theme-color" content="#F6F7F4">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Yolkbook">
+<meta property="og:url" content="https://yolkbook.app/pl/">
+<meta property="og:title" content="Yolkbook – licznik jajek i dziennik kurnika">
+<meta property="og:description" content="Licz jajka jednym dotknięciem, sprawdzaj koszt jajka i planuj wylęgi. Dane zostają w telefonie. Płacisz raz.">
+<meta property="og:image" content="https://yolkbook.app/assets/og-pl.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MobileApplication",
+      "@id": "https://yolkbook.app/#app",
+      "name": "Yolkbook",
+      "alternateName": "Yolkbook – licznik jajek",
+      "description": "Licznik jajek i dziennik stada dla przydomowych kur, kaczek, przepiórek, gęsi i indyków. Jajka dziennie, koszt jajka, kalendarz wylęgu, karty ptaków, kopie zapasowe i eksport CSV/PDF. Dane zostają w telefonie.",
+      "url": "https://yolkbook.app/pl/",
+      "image": "https://yolkbook.app/assets/icon.png",
+      "operatingSystem": "iOS 15 lub nowszy, Android 7.0 lub nowszy",
+      "applicationCategory": "LifestyleApplication",
+      "inLanguage": ["pl", "en", "de", "fr", "nl", "sv", "it", "es"],
+      "offers": [
+        { "@type": "Offer", "name": "Wersja darmowa", "price": "0", "priceCurrency": "USD" },
+        { "@type": "Offer", "name": "Yolkbook Pro (jednorazowo)", "price": "14.99", "priceCurrency": "USD" },
+        { "@type": "Offer", "name": "Breeder Pack (jednorazowo)", "price": "9.99", "priceCurrency": "USD" }
+      ],
+      "publisher": { "@id": "https://yolkbook.app/#org" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://yolkbook.app/#org",
+      "name": "Marcin Pastorczyk IT",
+      "url": "https://yolkbook.app/",
+      "email": "mpwpkp@gmail.com",
+      "address": { "@type": "PostalAddress", "streetAddress": "Lipnica Wielka 92", "postalCode": "34-483", "addressLocality": "Lipnica Wielka", "addressCountry": "PL" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Czy mogę przenieść stare zapiski o jajkach?", "acceptedAnswer": { "@type": "Answer", "text": "Tak. Zaimportujesz dzienne liczby jajek z arkusza kalkulacyjnego albo z pliku CSV z innej aplikacji. Wystarczy kolumna z datą i liczbą jajek; kolumna ze stadem jest opcjonalna." } },
+        { "@type": "Question", "name": "Czy przeniosę dane z iPhone'a na Androida i odwrotnie?", "acceptedAnswer": { "@type": "Answer", "text": "Tak. Utwórz w Ustawieniach plik kopii zapasowej, zapisz go w chmurze albo wyślij sobie e-mailem i przywróć na nowym telefonie. Plik zawiera też zdjęcia." } },
+        { "@type": "Question", "name": "Czy jest subskrypcja?", "acceptedAnswer": { "@type": "Answer", "text": "Nie. Wersja darmowa działa bez limitu czasu. Pro i Breeder Pack kupujesz raz." } },
+        { "@type": "Question", "name": "Czy aplikacja potrzebuje internetu?", "acceptedAnswer": { "@type": "Answer", "text": "Nie. Wszystko działa bez internetu. Aplikacja łączy się z App Store albo Google Play tylko przy zakupie lub przywracaniu zakupu." } },
+        { "@type": "Question", "name": "Czy Yolkbook doradza w sprawach zdrowia albo żywienia ptaków?", "acceptedAnswer": { "@type": "Answer", "text": "Nie. Yolkbook zapisuje to, co wpiszesz. Wartości orientacyjne, np. liczba dni inkubacji, są punktem wyjścia i możesz je zmienić." } }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
+<a class="skip" href="#main">Przejdź do treści</a>
 <div class="wrap">
   <header class="top">
-    <a class="brand" href="./"><img src="../assets/icon.png" alt="">Yolkbook</a>
-    <nav class="top">
+    <a class="brand" href="./"><img src="../assets/icon.png" alt="" width="36" height="36">Yolkbook</a>
+    <nav class="top" aria-label="Główne">
+      <a class="hide-sm" href="#funkcje">Funkcje</a>
+      <a class="hide-sm" href="#cennik">Cennik</a>
+      <a class="hide-sm" href="#pytania">Pytania</a>
       <a class="hide-sm" href="support.html">Pomoc</a>
-      <a class="hide-sm" href="privacy.html">Prywatność</a>
       <a class="lang" href="../" hreflang="en" lang="en">EN</a>
     </nav>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero">
       <div>
-        <span class="pill">Dziennik jajek i stada</span>
-        <h1>Licz jajka jednym dotknięciem. Dane zostają z Tobą.</h1>
-        <p class="lead">Dla przydomowych kur, kaczek, przepiórek i gęsi. Bez konta, bez naszych serwerów, bez subskrypcji.</p>
-        <div class="cta">
-          <span class="soon">Wkrótce w App Store i Google Play.</span>
+        <h1>Każde jajko policzone. Każdy zapis zachowany.</h1>
+        <p class="lead">Yolkbook to licznik jajek i dziennik stada dla przydomowych kur, kaczek, przepiórek, gęsi i indyków. Dzisiejsze jajka zapiszesz dwoma dotknięciami, zobaczysz, ile kosztuje Cię jedno jajko, i zaplanujesz wylęg. Wszystkie zapiski zostają w Twoim telefonie.</p>
+        <ul class="facts">
+          <li>Za darmo na start</li>
+          <li>Działa bez internetu</li>
+          <li>Pro płacisz raz</li>
+        </ul>
+        <div class="stores">
+          <span class="store"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 3v13h10V5H7zm5 14.2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg><span><small>Wkrótce w</small><strong>App Store</strong></span></span>
+          <span class="store"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 3v13h10V5H7zm5 14.2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg><span><small>Wkrótce w</small><strong>Google Play</strong></span></span>
+          <p class="note">Na iPhone'a, iPada i Androida. Aplikacja czeka teraz na zatwierdzenie przez Apple i Google.</p>
         </div>
       </div>
-      <div class="shot"><img src="../assets/screens/pl/1.png" alt="Ekran Dziś: liczniki jajek dla każdego stada z przyciskami plus i minus"></div>
+
+      <div class="counter" data-carton data-lang="pl" data-start="7" data-one="jajko dziś" data-few="jajka dziś" data-many="jajek dziś"
+           data-hint="Stuknij +, tak jak przy drzwiach kurnika." data-full="<strong>Pełny tuzin.</strong> Aplikacja sama prowadzi licznik i liczy koszt jajka.">
+        <div class="counter-head">
+          <span class="counter-flock">Kury z podwórka</span>
+          <span class="counter-meta">8 kur</span>
+        </div>
+        <div class="counter-row">
+          <button class="round" type="button" data-minus aria-label="Odejmij jedno jajko">−</button>
+          <div class="counter-num" aria-live="polite"><output>0</output><span data-label>jajek dziś</span></div>
+          <button class="round plus" type="button" data-plus aria-label="Dodaj jedno jajko">+</button>
+        </div>
+        <div class="carton" aria-hidden="true">
+          <span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span>
+          <span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span>
+        </div>
+        <p class="counter-foot" data-foot>Stuknij +, tak jak przy drzwiach kurnika.</p>
+      </div>
     </section>
 
-    <h2>Co potrafi</h2>
-    <div class="grid">
-      <div class="card"><h3>Jajka z dziś</h3><p>Duży licznik dla każdego stada: +1, −1, gotowe. Jajka od każdej kury, jeśli chcesz, i widżet na ekranie głównym.</p></div>
-      <div class="card"><h3>Ile kosztuje jajko</h3><p>Paszę i wydatki zapisujesz w kilka sekund. Koszt jajka obok ceny ze sklepu, sprzedaż i bilans.</p></div>
-      <div class="card"><h3>Wylęgi według planu</h3><p>Dni naświetlania, ostatnie dni bez otwierania inkubatora i dzień wylęgu z przypomnieniami. Typowe wartości, zawsze do zmiany.</p></div>
-      <div class="card"><h3>Ptaki i notatki</h3><p>Zdjęcia, rasa, wiek, historia statusów, własne notatki i przypomnienia.</p></div>
-    </div>
+    <section class="block" aria-labelledby="dlaczego">
+      <h2 id="dlaczego">Aplikacje znikają. Twoje zapiski powinny zostać.</h2>
+      <p class="intro">Kiedy popularny darmowy licznik jajek zniknął z App Store, hodowcy stracili razem z nim lata zapisków o nieśności. Yolkbook jest zbudowany tak, żeby Tobie to się nie przytrafiło: nie ma konta, które można zamknąć, ani naszego serwera, który można wyłączyć.</p>
+      <ul class="promises">
+        <li><h3>Zapisane w telefonie</h3><p>Stada, jajka, koszty, wylęgi, notatki i zdjęcia są w aplikacji na Twoim urządzeniu. Nic nie trafia do nas.</p></li>
+        <li><h3>Kopia jednym dotknięciem</h3><p>Zapisz jeden plik kopii w Plikach, na iCloud Drive, Dysku Google albo w e-mailu i przywróć go na dowolnym telefonie, iPhonie lub Androidzie.</p></li>
+        <li><h3>Zwykłe pliki do otwarcia</h3><p>Jajka, wydatki, ptaki i wylęgi wyeksportujesz do CSV dla dowolnego arkusza albo jako miesięczne i roczne raporty PDF.</p></li>
+      </ul>
+    </section>
 
-    <h2>Zajrzyj do środka</h2>
-    <div class="shots" tabindex="0" aria-label="Zrzuty ekranu">
-      <img src="../assets/screens/pl/1.png" alt="Dziś: liczniki jajek" loading="lazy">
-      <img src="../assets/screens/pl/2.png" alt="Kalendarz z liczbą jajek w każdym dniu" loading="lazy">
-      <img src="../assets/screens/pl/3.png" alt="Pieniądze: koszt jajka i bilans" loading="lazy">
-      <img src="../assets/screens/pl/4.png" alt="Karta kury z historią" loading="lazy">
-      <img src="../assets/screens/pl/5.png" alt="Etapy inkubacji" loading="lazy">
-      <img src="../assets/screens/pl/6.png" alt="Kopia zapasowa i przywracanie" loading="lazy">
-      <img src="../assets/screens/pl/7.png" alt="Wykresy" loading="lazy">
-    </div>
+    <section class="block" id="funkcje" aria-labelledby="funkcje-tytul">
+      <h2 id="funkcje-tytul">Co zrobisz w Yolkbook</h2>
+      <p class="intro">Sześć ekranów obejmuje codzienność małego stada, od porannego liczenia jajek po wylęg trzy tygodnie później.</p>
 
-    <h2>Twoje dane zostają u Ciebie</h2>
-    <div class="grid">
-      <div class="card dark"><div class="big">0</div><p>naszych serwerów z Twoimi danymi. Wszystko jest w telefonie. Bez rejestracji, bez śledzenia, bez reklam.</p></div>
-      <div class="card"><h3>Kopia jednym dotknięciem</h3><p>Zapisz plik kopii w Plikach, iCloud Drive albo na Dysku Google i przywróć go na nowym telefonie. Systemowa kopia telefonu (iCloud lub Google) może też kopiować dane aplikacji na Twoje konto.</p></div>
-      <div class="card"><h3>Eksport kiedy chcesz</h3><p>Pliki CSV do arkusza i raporty PDF — miesięczne albo roczne.</p></div>
-    </div>
+      <article class="feature">
+        <div>
+          <h3>Dzień zapisany dwoma dotknięciami</h3>
+          <p>Ekran „Dziś” ma duży licznik dla każdego stada. Otwierasz aplikację, stukasz +, gotowe.</p>
+          <ul>
+            <li>Widżet na ekranie głównym z +1 i −1 dla każdego stada</li>
+            <li>Opcjonalnie liczenie od każdej kury, żeby wiedzieć, która się niesie</li>
+            <li>Znaczniki jajek: dwużółtkowe, z miękką skorupką, rozbite i inne</li>
+            <li>Jajka sprzedane, oddane i zjedzone w domu</li>
+          </ul>
+        </div>
+        <div class="shot"><img src="../assets/screens/pl/1.png" width="560" height="1216" loading="lazy" alt="Ekran Dziś z licznikiem jajek dla dwóch stad i kosztem jajka w tygodniu"></div>
+      </article>
 
-    <h2>Płacisz raz</h2>
-    <table class="compare">
-      <tr><th></th><th>Darmowa</th><th>Pro</th></tr>
-      <tr><td>Licznik jajek, widżet, koszt jajka, kopia, CSV</td><td>✓ na zawsze</td><td>✓</td></tr>
-      <tr><td>Stada · ptaki z imieniem</td><td>1 · 6</td><td>Bez limitu</td></tr>
-      <tr><td>Statystyki</td><td>Ostatnie 90 dni</td><td>Cała historia, raporty PDF</td></tr>
-      <tr><td>Inkubacje naraz</td><td>1</td><td>Bez limitu</td></tr>
-      <tr><td>Cena</td><td>Za darmo — i możesz wypróbować wszystko z Pro przez 14 dni</td><td>Jedna płatność, bez subskrypcji</td></tr>
-    </table>
-    <p class="soon">Opcjonalny Breeder Pack: prosty rodowód, historia wylęgów i karta wylęgu PDF do sprzedaży piskląt.</p>
+      <article class="feature">
+        <div>
+          <h3>Każdy dzień miesiąca na jednym ekranie</h3>
+          <p>Kalendarz zaznacza każdy dzień kolorem zależnym od liczby zebranych jajek. Dni bez wpisu wyglądają inaczej niż dni z zerem, więc łatwo uzupełnić luki.</p>
+        </div>
+        <div class="shot"><img src="../assets/screens/pl/2.png" width="560" height="1216" loading="lazy" alt="Kalendarz miesięczny z liczbą jajek w każdym dniu"></div>
+      </article>
 
-    <h2>Pytania</h2>
-    <details><summary>Czy mogę przenieść stare dane?</summary><p>Tak — zaimportuj dzienne liczby jajek z arkusza albo z eksportu CSV innej aplikacji (data, stado, liczba jajek).</p></details>
-    <details><summary>Co przy zmianie telefonu?</summary><p>Zrób kopię jednym dotknięciem, zapisz ją w iCloud Drive, na Dysku Google albo wyślij e-mailem i przywróć na nowym telefonie. Zdjęcia są bezpieczne w zapisanych plikach kopii.</p></details>
-    <details><summary>A jeśli aplikacja przestanie być rozwijana?</summary><p>Twoje dane nie zależą od naszych serwerów — nie ma ich. Pliki kopii i eksport CSV działają zawsze.</p></details>
-    <details><summary>Czy aplikacja daje porady o zdrowiu albo żywieniu?</summary><p>Nie. Yolkbook zapisuje to, co wpiszesz. Wartości orientacyjne, np. długość inkubacji, są typowe i zawsze do zmiany.</p></details>
+      <article class="feature">
+        <div>
+          <h3>Ile naprawdę kosztuje jajko</h3>
+          <p>Paszę, ściółkę i inne wydatki wpiszesz w kilka sekund, bo aplikacja pamięta ostatni zakup. Yolkbook dzieli Twoje koszty przez liczbę jajek.</p>
+          <ul>
+            <li>Koszt jajka i opakowania obok ceny w sklepie</li>
+            <li>Sprzedaż jajek i bieżący bilans</li>
+            <li>Sprzęt, np. nowy kurnik, liczony osobno, poza kosztem jajka</li>
+            <li>Twoja waluta i wielkość opakowania (6, 10, 12…)</li>
+          </ul>
+        </div>
+        <div class="shot"><img src="../assets/screens/pl/3.png" width="560" height="1216" loading="lazy" alt="Ekran Finanse z kosztem jajka, wydatkami i bilansem"></div>
+      </article>
+
+      <article class="feature">
+        <div>
+          <h3>Karta dla każdego ptaka</h3>
+          <p>Nadaj kurom imiona i zapisuj zdjęcia, rasę, datę wyklucia i stan: niesie się, kwoczy się, pierzy się, nie niesie się. Każdy ptak ma swoją historię i własne notatki.</p>
+          <ul>
+            <li>Notatki z datą, etykietami i zdjęciami, Twoimi słowami</li>
+            <li>Przypomnienia według Twojego planu, np. sprzątanie kurnika</li>
+            <li>Dane o lokalizacji usuwane z każdego dodanego zdjęcia</li>
+          </ul>
+        </div>
+        <div class="shot"><img src="../assets/screens/pl/4.png" width="560" height="1216" loading="lazy" alt="Karta kury ze zdjęciem, stanem i historią"></div>
+      </article>
+
+      <article class="feature">
+        <div>
+          <h3>Wylęg rozpisany w kalendarzu</h3>
+          <p>Nastaw jaja w inkubatorze albo pod kwoką, a Yolkbook rozpisze dni naświetlania, zamknięcie inkubatora i dzień wyklucia, z przypomnieniem przy każdym etapie.</p>
+          <ul>
+            <li>Wylęgowość z nastawionych jaj</li>
+            <li>Wyklute pisklęta dodasz do stada jednym dotknięciem</li>
+            <li>Orientacyjne liczby dni dla sześciu gatunków, zawsze do zmiany</li>
+          </ul>
+        </div>
+        <div class="shot"><img src="../assets/screens/pl/5.png" width="560" height="1216" loading="lazy" alt="Oś inkubacji z dniami naświetlania i dniem wyklucia"></div>
+      </article>
+
+      <article class="feature">
+        <div>
+          <h3>Wykresy i raporty <span class="tag">pełna historia w Pro</span></h3>
+          <p>Wykresy jajek, jajek na stado, kur niosących się, kosztu jajka, paszy na miesiąc i bilansu. Do tego porównanie z tym samym miesiącem rok temu i liczba jajek od każdej kury z imieniem.</p>
+        </div>
+        <div class="shot"><img src="../assets/screens/pl/7.png" width="560" height="1216" loading="lazy" alt="Statystyki z wykresem jajek z 30 dni"></div>
+      </article>
+    </section>
+
+    <section class="block" aria-labelledby="gatunki-tytul">
+      <h2 id="gatunki-tytul">Dla ptaków, które hodujesz</h2>
+      <p class="intro">Każde stado ma swój gatunek, więc kalendarz wylęgu startuje od właściwej liczby dni.</p>
+      <dl class="species">
+        <div><dt>Kury</dt><dd><span class="days">21</span>dni do wyklucia</dd></div>
+        <div><dt>Kaczki</dt><dd><span class="days">28</span>dni do wyklucia</dd></div>
+        <div><dt>Kaczki piżmowe</dt><dd><span class="days">35</span>dni do wyklucia</dd></div>
+        <div><dt>Przepiórki</dt><dd><span class="days">17</span>dni do wyklucia</dd></div>
+        <div><dt>Gęsi</dt><dd><span class="days">30</span>dni do wyklucia</dd></div>
+        <div><dt>Indyki</dt><dd><span class="days">28</span>dni do wyklucia</dd></div>
+      </dl>
+      <p class="fineprint">Wartości orientacyjne, służą jako punkt wyjścia. Przy każdym wylęgu możesz je zmienić. Yolkbook nie udziela porad weterynaryjnych ani żywieniowych; zapisuje to, co wpiszesz.</p>
+    </section>
+
+    <section class="block" aria-labelledby="prywatnosc-tytul">
+      <div class="band">
+        <div>
+          <h2 id="prywatnosc-tytul">Dane Twojego stada zostają w telefonie</h2>
+          <p class="intro">Yolkbook nie ma kont ani serwerów, więc nie mamy czego od Ciebie przechowywać, sprzedawać ani zgubić.</p>
+          <ul>
+            <li><strong>Bez rejestracji</strong>Otwierasz aplikację i od razu liczysz.</li>
+            <li><strong>Bez reklam i śledzenia</strong>Aplikacja nie ma żadnej analityki.</li>
+            <li><strong>Bez internetu</strong>Łączy się tylko ze sklepem, gdy coś kupujesz.</li>
+            <li><strong>Kopie bezpieczeństwa</strong>Przed każdym przywracaniem i aktualizacją aplikacja zapisuje kopię.</li>
+          </ul>
+          <p class="fineprint" style="color: var(--on-band-muted)">Systemowa kopia telefonu (iCloud albo Google) może obejmować dane aplikacji na Twoim koncie. <a href="privacy.html">Przeczytaj politykę prywatności</a>.</p>
+        </div>
+        <div class="shot"><img src="../assets/screens/pl/6.png" width="560" height="1216" loading="lazy" alt="Ekran kopii zapasowej i przywracania"></div>
+      </div>
+    </section>
+
+    <section class="block" id="cennik" aria-labelledby="cennik-tytul">
+      <h2 id="cennik-tytul">Płacisz raz albo wcale</h2>
+      <p class="intro">Wersja darmowa działa bez limitu czasu i w pełni wystarcza dla małego stada. Pro znosi limity jedną płatnością.</p>
+      <div class="plans">
+        <div class="plan">
+          <h3>Darmowa</h3>
+          <p class="price">0 zł</p>
+          <p class="per">tak długo, jak chcesz</p>
+          <ul>
+            <li>Licznik jajek i widżet</li>
+            <li>Koszt jajka, sprzedaż i bilans</li>
+            <li>1 stado, do 6 ptaków z imieniem</li>
+            <li>1 inkubacja naraz</li>
+            <li>Statystyki z ostatnich 90 dni</li>
+            <li>Kopie zapasowe i eksport CSV</li>
+          </ul>
+        </div>
+        <div class="plan pro">
+          <h3>Pro</h3>
+          <p class="price">14,99 USD</p>
+          <p class="per">jedna płatność, bez subskrypcji</p>
+          <ul>
+            <li>Wszystko z wersji darmowej</li>
+            <li>Dowolna liczba stad i ptaków</li>
+            <li>Kilka inkubacji naraz</li>
+            <li>Cała historia w wykresach i bilansie</li>
+            <li>Miesięczne i roczne raporty PDF</li>
+          </ul>
+          <div class="extra"><p>Wszystkie funkcje Pro wypróbujesz za darmo przez 14 dni. Próbę uruchamiasz sam, kiedy chcesz, a po niej nic nie jest pobierane.</p></div>
+        </div>
+        <div class="plan">
+          <h3>Breeder Pack</h3>
+          <p class="price">9,99 USD</p>
+          <p class="per">jednorazowy dodatek</p>
+          <ul>
+            <li>Uproszczony rodowód: matka, ojciec, potomstwo i drzewo trzech pokoleń</li>
+            <li>Historia wylęgów według inkubatora, rodziców, gatunku i roku</li>
+            <li>Karta wylęgu w PDF do sprzedaży piskląt</li>
+          </ul>
+          <div class="extra"><p>Pro i Breeder Pack razem: 19,99 USD.</p></div>
+        </div>
+      </div>
+      <p class="pricing-note">Ceny w dolarach amerykańskich. App Store i Google Play pokażą cenę w złotych. Zakupy są przypisane do Twojego Apple ID albo konta Google i przywrócisz je na nowym telefonie.</p>
+    </section>
+
+    <section class="block" aria-labelledby="jezyki-tytul">
+      <h2 id="jezyki-tytul">W ośmiu językach</h2>
+      <p class="intro">Aplikacja mówi w języku Twojego telefonu, razem z formatem dat, liczb i waluty.</p>
+      <ul class="langs">
+        <li lang="pl">Polski</li><li lang="en">English</li><li lang="de">Deutsch</li><li lang="fr">Français</li>
+        <li lang="nl">Nederlands</li><li lang="sv">Svenska</li><li lang="it">Italiano</li><li lang="es">Español</li>
+      </ul>
+    </section>
+
+    <section class="block faq" id="pytania" aria-labelledby="pytania-tytul">
+      <h2 id="pytania-tytul">Pytania hodowców</h2>
+      <details><summary>Czy mogę przenieść stare zapiski o jajkach?</summary><p>Tak. Zaimportujesz dzienne liczby jajek z arkusza kalkulacyjnego albo z pliku CSV z innej aplikacji. Wystarczy kolumna z datą i liczbą jajek; kolumna ze stadem jest opcjonalna.</p></details>
+      <details><summary>Czy przeniosę dane z iPhone'a na Androida i odwrotnie?</summary><p>Tak. Utwórz w Ustawieniach plik kopii zapasowej, zapisz go w chmurze albo wyślij sobie e-mailem i przywróć na nowym telefonie. Plik zawiera też zdjęcia.</p></details>
+      <details><summary>Kurami zajmujemy się we dwoje. Czy możemy prowadzić jedno stado?</summary><p>Każdy telefon ma własne zapiski, a synchronizacji na żywo jeszcze nie ma. Możesz scalić plik kopii z drugiego telefonu; jeśli oba telefony mają wpis z tego samego dnia, zostaje nowszy.</p></details>
+      <details><summary>Czy jest subskrypcja?</summary><p>Nie. Wersja darmowa działa bez limitu czasu. Pro i Breeder Pack kupujesz raz.</p></details>
+      <details><summary>Co się stanie po 14 dniach próby?</summary><p>Aplikacja wraca do wersji darmowej. Wszystko, co wpisałeś, zostaje i możesz to dalej przeglądać i eksportować.</p></details>
+      <details><summary>Czy aplikacja potrzebuje internetu?</summary><p>Nie. Wszystko działa bez internetu. Aplikacja łączy się z App Store albo Google Play tylko przy zakupie lub przywracaniu zakupu.</p></details>
+      <details><summary>Na jakich telefonach działa?</summary><p>Na iPhonie i iPadzie z iOS 15 lub nowszym oraz na telefonach i tabletach z Androidem 7.0 lub nowszym. Interaktywny widżet na iPhonie wymaga iOS 17.</p></details>
+      <details><summary>Czy Yolkbook doradza w sprawach zdrowia albo żywienia ptaków?</summary><p>Nie. Yolkbook zapisuje to, co wpiszesz. Wartości orientacyjne, np. liczba dni inkubacji, są punktem wyjścia i możesz je zmienić.</p></details>
+    </section>
+
+    <section class="closing" aria-labelledby="koniec-tytul">
+      <h2 id="koniec-tytul">Zacznij od dzisiejszych jajek</h2>
+      <p>Zainstaluj Yolkbook, nazwij swoje stado i stuknij + przy pierwszym jajku. Zajmie Ci to mniej niż minutę.</p>
+      <div class="stores">
+        <span class="store"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 3v13h10V5H7zm5 14.2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg><span><small>Wkrótce w</small><strong>App Store</strong></span></span>
+        <span class="store"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 3v13h10V5H7zm5 14.2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg><span><small>Wkrótce w</small><strong>Google Play</strong></span></span>
+      </div>
+    </section>
   </main>
 
   <footer class="bottom">
-    <p class="links"><a href="support.html">Pomoc</a><a href="privacy.html">Polityka prywatności</a><a href="../">English</a></p>
-    <p>Marcin Pastorczyk IT · Lipnica Wielka 92, 34-483 Lipnica Wielka · NIP 7352613805 · <a href="mailto:mpwpkp@gmail.com">mpwpkp@gmail.com</a></p>
+    <p class="links"><a href="#funkcje">Funkcje</a><a href="#cennik">Cennik</a><a href="support.html">Pomoc</a><a href="privacy.html">Polityka prywatności</a><a href="../" hreflang="en" lang="en">English</a></p>
+    <p>Yolkbook tworzy Marcin Pastorczyk IT, Lipnica Wielka 92, 34-483 Lipnica Wielka. NIP 7352613805. <a href="mailto:mpwpkp@gmail.com">mpwpkp@gmail.com</a></p>
   </footer>
 </div>
+<script src="../assets/carton.js" defer></script>
 </body>
 </html>
