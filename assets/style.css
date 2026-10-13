@@ -214,3 +214,4 @@ footer.bottom .links { display: flex; flex-wrap: wrap; gap: 6px 18px; }
 .langmenu li a:hover { background: var(--line); }
 .langmenu li a[aria-current="page"] { background: var(--yolk-soft); }
 .band .band-fine { color: var(--on-band-muted); }
+a.store:hover { box-shadow: 0 0 0 3px var(--yolk); }
